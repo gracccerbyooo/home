@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by emilykwon (http://jsbin.com/junumey/24/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style id="jsbin-css">
+:root {
+  --accent-color: #f3ff87;
+  --text-color: #f0f4f5;
+  --background-color: #0b002b;}
+
+      
+        body {
+            background-color: black; /* 배경색 지정 */
+            color: white; /* 텍스트 색상 지정 */
+          margin: 0;
+      padding: 0;
+      background: url('https://i.imgur.com/QkW5BTy.jpg') no-repeat center center fixed; 
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+        .menu li:hover {
+            background-color: gray; /* 마우스를 올렸을 때 배경색 변경 */
+        }
+
+       :root {
+  --accent-color: #ff0000; 
+  --text-color: #f0f4f5;
+  --background-color: #0b002b;}
+
+.body {
+  margin: 0;
+  font-family: 'Montserrat';}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 8px 12px;}
+
+.nav_logo {
+  font-size: 24px;
+  color: var(--text-color);}
+
+.nav_logo i {
+  color: var(--accent-color);}
+
+.nav_logo span {
+  color: var(--accent-color);}
+
+.nav_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;}
+
+.nav_menu li {
+  padding: 8px 12px;}
+
+.nav_menu li:hover {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;}
+
+.nav_menu li a:hover {
+  color: var(--background-color);}
+
+.nav_icons {
+  display: flex;
+  color: #7dc0ff;
+  list-style: none;
+  padding-left: 0;}
+
+  
+        
+        .menu {
+            display: flex; /* Flexbox 사용 */
+            justify-content: space-between; /* 요소 사이에 공간을 균등하게 분배하여 정렬 */
+            padding: 0;
+            list-style-type: none; /* 리스트 스타일 제거 */
+            width: 100%; /* 메뉴를 네비게이션 바의 전체 너비로 설정 */
+        }
+        .menu li {
+            flex: 1; /* 네모칸을 동일한 크기로 설정 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+            padding: 20px; /* 내부 여백 */
+            border: 1px solid white; /* 테두리 추가 */
+            margin: 0 5px; /* 네모칸 사이 간격 */
+          
+            box-sizing: border-box; /* 패딩과 테두리를 크기에 포함 */
+            transition: background-color 0.3s; /* 배경색 변경 시 애니메이션 효과 */
+        }
+        .menu li:hover {
+            background-color: gray; /* 마우스를 올렸을 때 배경색 변경 */
+        }
+        .menu li a {
+            color: white; /* 링크 텍스트 색상 */
+            text-decoration: none; /* 링크 밑줄 제거 */
+            display: block; /* a 태그를 블록 요소로 변환 */
+        }
+.image-container {
+    display: flex; /* Flexbox 사용 */
+    justify-content: space-between; /* 요소 사이에 공간을 균등하게 분배하여 정렬 */
+}
+.image-container img {
+    width: 200px; /* 이미지의 너비 */
+    height: auto; /* 이미지의 높이 자동으로 조정 */
+    margin-right: 20px; /* 오른쪽 여백(간격) */
+}
+/* 마지막 이미지의 오른쪽 여백 제거 */
+.image-container img:last-child {
+    margin-right: 0;
+}
+.content-item {
+    display: flex; /* Flexbox 사용 */
+    align-items: flex-start; /* 내용의 상단 정렬 */
+    margin-bottom: 20px; /* 아래 여백 */
+}
+.content-item img {
+    width: 200px; /* 이미지의 너비 */
+    height: auto; /* 이미지의 높이 자동으로 조정 */
+    margin-right: 20px; /* 오른쪽 여백 */
+}
+
+ /* 이미지박스설정 */
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      /* 이미지사이즈 설정 */
+     
+      .aa1 {
+        text-align: center;
+      }
+  </body>
+
+</style>
+</head>
+  
+  <body>
+ <nav class="navbar">
+      <div class="nav_logo">
+        <a href="#" class="home-icon"><img src="https://i.imgur.com/MruF48m.png" alt="Home" style="width: 180px; height: 60px;"></a>
+    </div>
+      </div>
+      <ul class="nav_menu">
+        <li><a href="">홈</a></li>
+        <li><a href="https://jsbin.com/pavuyey">영화</a></li>
+            <li><a href="https://jsbin.com/dowuhor/18">드라마</a></li>
+            <li><a href="https://jsbin.com/livinug/2">뮤지컬</a></li>
+            <li><a href="https://jsbin.com/yamaduyeso/1">애니메이션</a></li>
+      </ul>
+
+    </nav>
+
+
+      <h1 class = "aa1">이달의 추천작</h1>
+    <div class="image-container">
+      
+        <img src="https://i.imgur.com/yX3kzGf.jpg" onmouseenter="zoomIn(event)" 
+        onmouseleave="zoomOut(event)" alt="영화">
+        <img src="https://i.imgur.com/eE6DKdG.jpg" onmouseenter="zoomIn(event)" 
+        onmouseleave="zoomOut(event)"alt="드라마">
+        <img src="https://i.imgur.com/uSbodg1.jpg" onmouseenter="zoomIn(event)" 
+        onmouseleave="zoomOut(event)"alt="뮤지컬">
+        <img src="https://i.imgur.com/4sLtRhS.jpg" onmouseenter="zoomIn(event)" 
+        onmouseleave="zoomOut(event)"alt="애니메이션">
+    </div>
+
+    <section class="main-content">
+        <h2>인기 있는 드라마</h2>
+      
+        <div class="content-grid">
+          
+            <div class="content-item">
+                <img src="https://i.imgur.com/poMCM7z.jpg" alt="선재 업고 튀어">
+                  <div>
+                    <h3>선재 업고 튀어</h3>
+                    <p>만약, 당신의 최애를 구할 수 있는 기회가 온다면? 삶의 의지를 놓아버린 순간, 자신을 살게 해줬던 유명 아티스트 "류선재". <br>그의 죽음으로 절망했던 열성팬 "임솔"이 최애를 살리기 위해 시간을 거슬러 2008년으로 돌아간다! 다시 살게 된 열아홉, 목표는 최애 류선재를 지키는 것!</p>
+                  </div>
+            </div>
+          
+          <h2>인기 있는 영화</h2>
+            <div class="content-item">
+                <img src="https://i.imgur.com/k2LmejS.jpg" alt="영화 2">
+               <div>
+                <h3>파묘</h3>
+                <p>미국 LA, 거액의 의뢰를 받은 무당 ‘화림’(김고은)과 ‘봉길’(이도현)은 기이한 병이 대물림되는 집안의 장손을 만난다. <br>조상의 묫자리가 화근임을 알아챈 ‘화림’은 이장을 권하고, 돈 냄새를 맡은 최고의 풍수사 ‘상덕’(최민식)과 장의사 ‘영근’(유해진)이 합류한다. <br>“전부 잘 알 거야… 묘 하나 잘못 건들면 어떻게 되는지” 절대 사람이 묻힐 수 없는 악지에 자리한 기이한 묘. <br>‘상덕’은 불길한 기운을 느끼고 제안을 거절하지만, ‘화림’의 설득으로 결국 파묘가 시작되고… 나와서는 안될 것이 나왔다.</p>
+               </div>
+            </div>
+           <h2>인기 있는 예능</h2>
+           <div class="content-item">
+                <img src="https://i.imgur.com/6yPjpAZ.jpg" alt="TV 프로그램 1">
+               <div>
+                <h3>놀라운 토요일</h3>
+                <p> 전국 시장 속 핫한 음식을 걸고 노래 가사 받아쓰기 게임을 하는 세대 초월 음악 예능 <br> 주말 저녁 온 가족이 함께 즐길 수 있는 웃음 라인업의 완성!.</p>
+               </div>
+            </div>
+            <!-- 더 많은 콘텐츠 아이템들 -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 KAYWON OTT.고명선 권지윤22457005 문지연22457019 신연주22457035 All rights reserved.</p>
+    </footer>
+  <script id="jsbin-javascript">
+
+    function zoomIn(event) {
+      event.target.style.transform = "scale(1.2)";
+      event.target.style.zIndex = 1;
+      event.target.style.transition = "all 0.5s";
+    }
+  
+    function zoomOut(event) {
+      event.target.style.transform = "scale(1)";
+      event.target.style.zIndex = 0;
+      event.target.style.transition = "all 0.5s";
+    }
+ 
+ 
+</script>
+</body>
+</html>
